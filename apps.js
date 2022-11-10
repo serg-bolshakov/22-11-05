@@ -1,3 +1,21 @@
+const typeUser = ''; //user, guest, bot
+
+switch (typeUser) {
+    case 'admin':
+        console.log ('Вы - администратор');
+        break;
+    case 'user':
+        console.log ('Вы - пользователь');
+        break;
+    case 'guest':
+        console.log ("Вы - гость");
+        break;
+    default:
+        console.log ('Вы - бот!')
+        break;
+}
+
+
 // let age;
 // const gender = "Муж";
 
@@ -24,5 +42,5 @@
 //     console.log ("Вам налево")
 // } 
 
-const isAdmin = false;
-console.log (`Добро пожаловать: ${isAdmin? 'Администатор': 'Пользователь'}`);
+// const isAdmin = false;
+// console.log (`Добро пожаловать: ${isAdmin? 'Администатор': 'Пользователь'}`);
