@@ -1,19 +1,29 @@
-const typeUser = ''; //user, guest, bot
+let a = 0;
+const lastNumber = 10;
+let message = '';
 
-switch (typeUser) {
-    case 'admin':
-        console.log ('Вы - администратор');
-        break;
-    case 'user':
-        console.log ('Вы - пользователь');
-        break;
-    case 'guest':
-        console.log ("Вы - гость");
-        break;
-    default:
-        console.log ('Вы - бот!')
-        break;
+
+while ( ++a <= lastNumber) {
+    message += `${a}${a !== lastNumber? ', ': ''} `;
 }
+console.log (message);
+
+// const typeUser = ''; //user, guest, bot
+
+// switch (typeUser) {
+//     case 'admin':
+//         console.log ('Вы - администратор');
+//         break;
+//     case 'user':
+//         console.log ('Вы - пользователь');
+//         break;
+//     case 'guest':
+//         console.log ("Вы - гость");
+//         break;
+//     default:
+//         console.log ('Вы - бот!')
+//         break;
+// }
 
 
 // let age;
